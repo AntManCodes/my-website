@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "pages:build": "npx @cloudflare/next-on-pages"
+    "pages:build": "next build"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.12",
