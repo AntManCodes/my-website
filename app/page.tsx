@@ -1,65 +1,166 @@
-import Image from "next/image";
+import { Navbar1 } from "@/components/ui/navbar-1";
+import { SplineScene } from "@/components/ui/splite";
+import { Card } from "@/components/ui/card";
+import { Spotlight } from "@/components/ui/spotlight";
+import { Feature108 } from "@/components/ui/feature108";
+import { LogoCloud } from "@/components/ui/logo-cloud-2";
+import { TestimonialsSection } from "@/components/ui/testimonials-columns-1";
+import { WorldMapSection } from "@/components/ui/world-map";
+import { FaqsSection } from "@/components/ui/faqs-1";
+import { EvervaultCard, Icon } from "@/components/ui/evervault-card";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <main className="min-h-screen bg-background">
+      {/* Navbar */}
+      <div className="sticky top-0 z-50 bg-background/80 backdrop-blur-sm">
+        <Navbar1 />
+      </div>
+
+      {/* Hero Section with 3D Spline Scene */}
+      <section id="hero" className="relative w-full">
+        <Card className="w-full min-h-[600px] bg-black/[0.96] relative overflow-hidden rounded-none border-x-0">
+          <Spotlight className="-top-40 left-0 md:left-60 md:-top-20" fill="white" />
+          <div className="flex h-full min-h-[600px]">
+            <div className="flex-1 p-8 md:p-16 relative z-10 flex flex-col justify-center">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/20 bg-white/5 text-white/60 text-sm mb-6 w-fit">
+                <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
+                Now live — explore the platform
+              </div>
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 leading-tight">
+                Build Beautiful<br />
+                <span className="bg-gradient-to-r from-orange-400 to-pink-500 bg-clip-text text-transparent">
+                  Web Experiences
+                </span>
+              </h1>
+              <p className="mt-6 text-neutral-300 max-w-lg text-lg leading-relaxed">
+                Bring your UI to life with stunning components, 3D scenes, and fluid animations.
+                Create immersive digital experiences that captivate your audience.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 mt-8">
+                <a
+                  href="#features"
+                  className="inline-flex items-center justify-center px-8 py-3 text-sm font-medium text-black bg-white rounded-full hover:bg-white/90 transition-colors"
+                >
+                  Explore Features
+                </a>
+                <a
+                  href="#"
+                  className="inline-flex items-center justify-center px-8 py-3 text-sm font-medium text-white border border-white/20 rounded-full hover:bg-white/5 transition-colors"
+                >
+                  View Source
+                </a>
+              </div>
+            </div>
+            <div className="flex-1 relative hidden md:block">
+              <SplineScene
+                scene="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
+                className="w-full h-full"
+              />
+            </div>
+          </div>
+        </Card>
+      </section>
+
+      {/* Logo Cloud — Partners */}
+      <section className="py-24 px-4">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="mb-8 text-center font-medium text-lg text-muted-foreground tracking-tight md:text-2xl">
+            Powered by the tools you{" "}
+            <span className="font-semibold text-primary">already love</span>
+          </h2>
+          <LogoCloud />
+        </div>
+      </section>
+
+      {/* Features Tabs */}
+      <section id="features" className="bg-muted/20">
+        <Feature108 />
+      </section>
+
+      {/* Interactive Evervault Cards */}
+      <section className="py-24 px-4 bg-background">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Interactive by Design</h2>
+            <p className="text-muted-foreground max-w-xl mx-auto">
+              Every component is crafted to engage. Hover over the cards below to experience the magic.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+            {[
+              { text: "hover", label: "Cryptographic Effect", desc: "Watch the matrix of characters reveal a gradient on hover." },
+              { text: "me", label: "Motion Tracking", desc: "Mouse-aware radial gradients that follow your cursor precisely." },
+              { text: "✦", label: "Layered Depth", desc: "Multiple overlapping layers create rich, dimensional visual depth." },
+            ].map(({ text, label, desc }) => (
+              <div
+                key={text}
+                className="border border-black/[0.2] dark:border-white/[0.2] flex flex-col items-start p-4 relative h-[26rem] rounded-2xl"
+              >
+                <Icon className="absolute h-6 w-6 -top-3 -left-3 text-foreground" />
+                <Icon className="absolute h-6 w-6 -bottom-3 -left-3 text-foreground" />
+                <Icon className="absolute h-6 w-6 -top-3 -right-3 text-foreground" />
+                <Icon className="absolute h-6 w-6 -bottom-3 -right-3 text-foreground" />
+                <EvervaultCard text={text} />
+                <h3 className="text-foreground mt-2 text-sm font-semibold">{label}</h3>
+                <p className="text-xs border font-light border-border rounded-full mt-2 text-foreground px-3 py-1">
+                  {desc}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* World Map — Global Reach */}
+      <section className="py-24 bg-muted/20 w-full">
+        <div className="max-w-7xl mx-auto text-center px-4">
+          <p className="font-bold text-xl md:text-4xl text-foreground mb-2">
+            Global <span className="text-muted-foreground">Connectivity</span>
           </p>
+          <p className="text-sm md:text-lg text-muted-foreground max-w-2xl mx-auto py-4 mb-8">
+            Break free from traditional boundaries. Connect with teams and customers worldwide,
+            no matter where you are on the globe.
+          </p>
+          <WorldMapSection />
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      {/* Testimonials */}
+      <section className="bg-background">
+        <TestimonialsSection />
+      </section>
+
+      {/* FAQ */}
+      <section className="bg-muted/20 flex justify-center">
+        <FaqsSection />
+      </section>
+
+      {/* Footer */}
+      <footer className="border-t py-12 px-4">
+        <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+          <div className="flex items-center gap-3">
+            <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+              <circle cx="16" cy="16" r="16" fill="url(#footer_grad)" />
+              <defs>
+                <linearGradient id="footer_grad" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                  <stop stopColor="#FF9966" />
+                  <stop offset="1" stopColor="#FF5E62" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <span className="font-semibold text-sm">MyWebsite</span>
+          </div>
+          <p className="text-muted-foreground text-sm">
+            © 2026 MyWebsite. Built with Next.js, Tailwind CSS & shadcn/ui.
+          </p>
+          <div className="flex gap-6 text-sm text-muted-foreground">
+            <a href="#" className="hover:text-foreground transition-colors">Privacy</a>
+            <a href="#" className="hover:text-foreground transition-colors">Terms</a>
+            <a href="#" className="hover:text-foreground transition-colors">Contact</a>
+          </div>
         </div>
-      </main>
-    </div>
+      </footer>
+    </main>
   );
 }
