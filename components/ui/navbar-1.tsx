@@ -33,7 +33,7 @@ const Navbar1 = () => {
         </div>
 
         <nav className="hidden md:flex items-center space-x-8">
-          {["Home", "Features", "Pricing", "Contact"].map((item) => (
+          {["Overview", "Specs", "Use Cases", "Contact"].map((item) => (
             <motion.div
               key={item}
               initial={{ opacity: 0, y: -10 }}
@@ -59,7 +59,7 @@ const Navbar1 = () => {
             href="#"
             className="inline-flex items-center justify-center px-5 py-2 text-sm text-primary-foreground bg-primary rounded-full hover:bg-primary/90 transition-colors"
           >
-            Get Started
+            Pre-Order
           </a>
         </motion.div>
 
@@ -88,7 +88,7 @@ const Navbar1 = () => {
               <X className="h-6 w-6 text-foreground" />
             </motion.button>
             <div className="flex flex-col space-y-6">
-              {["Home", "Features", "Pricing", "Contact"].map((item, i) => (
+              {["Overview", "Specs", "Use Cases", "Contact"].map((item, i) => (
                 <motion.div
                   key={item}
                   initial={{ opacity: 0, x: 20 }}
@@ -113,7 +113,7 @@ const Navbar1 = () => {
                   className="inline-flex items-center justify-center w-full px-5 py-3 text-base text-primary-foreground bg-primary rounded-full hover:bg-primary/90 transition-colors"
                   onClick={toggleMenu}
                 >
-                  Get Started
+                  Pre-Order
                 </a>
               </motion.div>
             </div>

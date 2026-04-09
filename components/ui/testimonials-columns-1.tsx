@@ -5,58 +5,58 @@ import { Badge } from "@/components/ui/badge";
 
 const testimonials = [
   {
-    text: "This platform revolutionized our operations, streamlining everything from design to deployment. The cloud-based setup keeps us productive even remotely.",
-    image: "https://randomuser.me/api/portraits/women/1.jpg",
-    name: "Briana Patton",
-    role: "Operations Manager",
+    text: "We deployed 40 NOVA-1 units across our Detroit assembly line. Defect rates dropped 34% within 90 days. This isn't a prototype — it's the real thing.",
+    image: "https://randomuser.me/api/portraits/men/11.jpg",
+    name: "James Harrington",
+    role: "VP of Operations, AutoCore Industries",
   },
   {
-    text: "Implementing these components was smooth and quick. The customizable, user-friendly interface made team onboarding effortless.",
-    image: "https://randomuser.me/api/portraits/men/2.jpg",
-    name: "Bilal Ahmed",
-    role: "IT Manager",
+    text: "Our order throughput increased 280% after integrating NOVA-1 into our fulfillment center. Full ROI was evident before the end of the first quarter.",
+    image: "https://randomuser.me/api/portraits/women/21.jpg",
+    name: "Priya Shankar",
+    role: "Director of Logistics, PrimeMover Co.",
   },
   {
-    text: "The support team is exceptional, guiding us through setup and providing ongoing assistance, ensuring our complete satisfaction.",
-    image: "https://randomuser.me/api/portraits/women/3.jpg",
-    name: "Saman Malik",
-    role: "Customer Support Lead",
+    text: "NOVA-1 handles our overnight supply runs and patient transport across three floors. Our nursing staff now focuses entirely on patient care — exactly as it should be.",
+    image: "https://randomuser.me/api/portraits/women/32.jpg",
+    name: "Dr. Elena Vasquez",
+    role: "Chief of Operations, MedNorth Health",
   },
   {
-    text: "Seamless integration enhanced our business operations and efficiency significantly. Highly recommend for its intuitive design.",
-    image: "https://randomuser.me/api/portraits/men/4.jpg",
-    name: "Omar Raza",
-    role: "CEO",
+    text: "We were skeptical going in. After a 30-day pilot, we immediately placed a 200-unit order. The dexterity and task adaptability are unlike anything else on the market.",
+    image: "https://randomuser.me/api/portraits/men/44.jpg",
+    name: "Marcus Webb",
+    role: "CEO, Trident Manufacturing",
   },
   {
-    text: "Robust features and quick support have transformed our workflow, making us significantly more efficient and competitive.",
-    image: "https://randomuser.me/api/portraits/women/5.jpg",
-    name: "Zainab Hussain",
-    role: "Project Manager",
+    text: "We benchmarked NOVA-1 against every major competitor. Nothing else came close in terms of total cost of ownership and real-world task reliability.",
+    image: "https://randomuser.me/api/portraits/men/55.jpg",
+    name: "Yuki Tanaka",
+    role: "Head of Automation, FujiTech Robotics",
   },
   {
-    text: "The smooth implementation exceeded every expectation. It streamlined our processes and improved overall business performance.",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-    name: "Aliza Khan",
-    role: "Business Analyst",
+    text: "NOVA-1 works 22 hours a day without complaint. We scaled our overnight operations without hiring a single additional person.",
+    image: "https://randomuser.me/api/portraits/women/63.jpg",
+    name: "Sarah O'Brien",
+    role: "COO, Atlas Freight Solutions",
   },
   {
-    text: "Our business functions improved dramatically. User-friendly design led to overwhelmingly positive customer feedback.",
-    image: "https://randomuser.me/api/portraits/men/7.jpg",
-    name: "Farhan Siddiqui",
-    role: "Marketing Director",
+    text: "The fine motor skills on NOVA-1 are remarkable. It handles circuit board assembly with precision that surpasses our most experienced technicians.",
+    image: "https://randomuser.me/api/portraits/men/72.jpg",
+    name: "David Kim",
+    role: "Plant Manager, Korexx Electronics",
   },
   {
-    text: "They delivered a solution that exceeded all expectations, truly understanding our needs and enhancing our core operations.",
-    image: "https://randomuser.me/api/portraits/women/8.jpg",
-    name: "Sana Sheikh",
-    role: "Sales Manager",
+    text: "We deployed NOVA-1 across three facilities in the UAE. Onboarding was seamless and units were fully operational within two weeks of arrival.",
+    image: "https://randomuser.me/api/portraits/women/81.jpg",
+    name: "Fatima Al-Rashid",
+    role: "Operations Director, Gulf Logistics Group",
   },
   {
-    text: "Using this platform, our online presence and conversions significantly improved, directly boosting overall business performance.",
-    image: "https://randomuser.me/api/portraits/men/9.jpg",
-    name: "Hassan Ali",
-    role: "E-commerce Manager",
+    text: "NOVA-1 inspects hazardous sites our teams can't safely enter. It's already flagged two potential safety failures and saved us significant liability exposure.",
+    image: "https://randomuser.me/api/portraits/men/90.jpg",
+    name: "Tom Bellamy",
+    role: "Chief Engineer, NovaBridge Construction",
   },
 ];
 
@@ -79,10 +79,10 @@ export function TestimonialsSection() {
             <Badge variant="outline">Testimonials</Badge>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tighter mt-5">
-            What our users say
+            Trusted by industry leaders
           </h2>
           <p className="text-center mt-5 opacity-75 text-muted-foreground">
-            See what our customers have to say about us.
+            From factory floors to hospital corridors — here&apos;s what early operators are saying.
           </p>
         </motion.div>
         <div className="flex justify-center gap-6 mt-10 [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)] max-h-[740px] overflow-hidden">

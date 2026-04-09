@@ -4,45 +4,45 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 const questions = [
   {
     id: "item-1",
-    title: "What is this platform?",
+    title: "What is NOVA-1?",
     content:
-      "This is a modern web platform built with beautiful UI components, designed to help you build stunning websites with ease using React, Tailwind CSS, and shadcn.",
+      "NOVA-1 is a general-purpose humanoid robot built for real-world industrial, logistics, and care environments. Standing 5'9\" and weighing 125 lbs, it operates with 42 degrees of freedom and can carry up to 55 lbs — performing complex, dexterous tasks that previously required human labor.",
   },
   {
     id: "item-2",
-    title: "Who can benefit from using this?",
+    title: "How much does NOVA-1 cost?",
     content:
-      "Founders, product teams, and agencies that want to accelerate idea validation and delivery will find this incredibly useful.",
+      "NOVA-1 starts at $29,900 per unit, with volume pricing available for fleet deployments of 10 or more. Most customers achieve full ROI within 12–18 months compared to equivalent human labor costs. Financing and multi-year leasing options are available through Nova Robotics Capital.",
   },
   {
     id: "item-3",
-    title: "What features are included?",
+    title: "What tasks can NOVA-1 perform?",
     content:
-      "You get a collaborative workspace with reusable UI blocks, deployment automation, interactive 3D scenes, animated components, and comprehensive analytics all in one place.",
+      "NOVA-1 is designed for a wide range of tasks: precision assembly, pick-and-place, palletizing, quality inspection, material transport, patient assistance, and hazardous environment operations. It learns new tasks through demonstration via our intuitive teach mode, and is continuously updated over the air through Nova OS.",
   },
   {
     id: "item-4",
-    title: "Can I customize the components?",
+    title: "How does NOVA-1 learn new tasks?",
     content:
-      "Yes. All components are fully editable and come with design systems and code scaffolding so you can tailor blocks to your brand and workflow.",
+      "NOVA-1 uses a combination of imitation learning, reinforcement learning, and cloud-synced model updates. Show it a task once or twice using teach mode, and it generalizes reliably to similar variations. Fleet-wide improvements are deployed automatically — every NOVA-1 gets smarter as the network grows.",
   },
   {
     id: "item-5",
-    title: "Does it integrate with existing tools?",
+    title: "Is NOVA-1 safe to operate around human workers?",
     content:
-      "Absolutely. It connects with popular source control platforms, design tools, and cloud providers to fit seamlessly into your current stack.",
+      "Absolutely. NOVA-1 is equipped with 360° LiDAR, stereoscopic 4K cameras, and proprioceptive force sensing across every joint. It detects and avoids humans in real time, automatically reduces speed in shared workspaces, and meets ISO 10218 collaborative robot safety standards. It has logged over 200,000 hours of co-located operation without a single safety incident.",
   },
   {
     id: "item-6",
-    title: "How do I get support?",
+    title: "How long does the battery last and how is it recharged?",
     content:
-      "You can access detailed documentation, community forums, and dedicated customer success channels for help at any time.",
+      "NOVA-1 runs for up to 8 hours on a single charge and fully recharges in under 2 hours. For 24/7 operations, we offer hot-swap battery systems that allow units to return to the floor in under 3 minutes. Autonomous docking stations are available for fully hands-free charging.",
   },
   {
     id: "item-7",
-    title: "How do I get started?",
+    title: "When can I order and when does it ship?",
     content:
-      "Simply clone the repository, install dependencies with npm install, and run npm run dev to start the development server. You'll be up and running in minutes.",
+      "Pre-orders are open now. First production units ship to early customers in Q3 2026, with full commercial availability beginning Q1 2027. Enterprise buyers can apply for our pilot program to deploy units before the general release — contact our team to learn more.",
   },
 ];
 
@@ -52,8 +52,8 @@ export function FaqsSection() {
       <div className="space-y-2">
         <h2 className="text-3xl font-bold md:text-4xl">Frequently Asked Questions</h2>
         <p className="text-muted-foreground max-w-2xl">
-          Here are some common questions and answers. If you don&apos;t find the answer you&apos;re looking for,
-          feel free to reach out.
+          Everything you need to know about NOVA-1. If you don&apos;t find the answer you&apos;re looking for,
+          our team is happy to help.
         </p>
       </div>
       <Accordion
